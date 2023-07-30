@@ -1,0 +1,147 @@
+$color-blue:#1A74E2;
+$color-lblue:#3FA0EF;
+$color-llblue:#6bd0ff;
+$color-black:#101010;
+$color-lblack:#1f2123;
+
+.projects {
+    width: calc(100% - 95px);
+    height: 100vh;
+    
+    
+    
+    position: absolute;
+    left: 95px;
+
+
+    .head {
+        text-align: center;
+        position: relative;
+        top: 20px;
+        font-weight: 900;
+        font-size: 0.9em;
+    }
+    .cardcon {
+        padding: 40px 80px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .projects{
+        width: 100%;
+        height: max-content;
+        left: 0px;
+    }
+    
+}
+
+
+//Project Card Css
+
+
+.card {
+    width: 500px;
+    height: 250px;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    
+   .overlay {
+       width: 0%;
+       height: 0%;
+       background: rgba(57, 57, 57, 0.5);
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       z-index: 5;
+       transition:0.3s ease-out;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       .linkcon {
+           display: flex;
+           background-color: #000000;
+           display: none;
+           padding: 5px;
+           gap: 15px;
+           color: whitesmoke;
+           align-items: center;
+           justify-content: center;
+           border-radius: 4px;
+
+           a {
+               display: flex;
+               align-items: center;
+               color: white;
+
+               
+               span {
+                   font-size: 0.8em;
+                   font-weight: 800;
+               }
+           }
+       }
+   }
+   .overlay::after {
+       width: 100%;
+       height: 100%;
+   }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        display: block;
+       
+        
+    }
+
+    .rightbox {
+        width: 150px;
+        transition:right 0.3s ease-in-out;
+        position: absolute;
+        right:-150px ;
+        height: 100%;
+        background-color: $color-blue;
+        z-index: 10;
+        
+
+       
+    }
+    
+   
+}
+.card:hover {
+
+    img {
+        z-index: 2;
+        position: absolute;
+        background-image: linear-gradient(to bottom right,#000000,#dc4225);
+    }
+    .rightbox {
+      
+      right: 0px;
+      z-index: 10;
+      
+      
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+
+        .linkcon {
+            display: flex;
+
+
+        }
+    }
+}
