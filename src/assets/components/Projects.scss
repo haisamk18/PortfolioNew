@@ -20,6 +20,14 @@ $color-lblack:#1f2123;
         top: 20px;
         font-weight: 900;
         font-size: 0.9em;
+        
+        background-color: $color-llblue;
+        width: max-content;
+        margin:  0 auto;
+        padding: 0px 4px;
+        color: $color-lblack;
+        border-radius: 3px;
+        animation: cpulse 1s alternate-reverse infinite;
     }
     .cardcon {
         padding: 40px 80px;
@@ -122,6 +130,8 @@ $color-lblack:#1f2123;
 }
 .card:hover {
 
+    animation: cpulse 1s ease-in-out;
+
     img {
         z-index: 2;
         position: absolute;
@@ -145,3 +155,29 @@ $color-lblack:#1f2123;
         }
     }
 }
+
+@-webkit-keyframes cpulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(107, 208, 255, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 20px rgba(26,116,226, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(26,116,226, 0);
+    }
+  }
+  @keyframes cpulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(107, 208, 255, 0.4);
+      box-shadow: 0 0 0 0 rgba(107, 208, 255, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 20px rgba(26,116,226, 0);
+        box-shadow: 0 0 0 10px rgba(26,116,226, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(26,116,226, 0);
+        box-shadow: 0 0 0 0 rgba(26,116,226, 0);
+    }
+  }

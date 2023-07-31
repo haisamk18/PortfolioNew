@@ -1,0 +1,112 @@
+$color-blue:#1A74E2;
+$color-lblue:#3FA0EF;
+$color-llblue:#6bd0ff;
+$color-black:#101010;
+$color-lblack:#1f2123;
+
+.homecon {
+    width: calc(100% - 95px);
+    height: 100vh;
+    
+    
+    
+    position: absolute;
+    left: 95px;
+   
+    display: flex;
+    flex-direction: row;
+
+    .leftcon {
+        width: 60%;
+        height: 100%;
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+       
+          
+        .textall {
+            width: 100%;
+            height: max-content;
+            padding: 0px 20px 0px 100px;
+            box-sizing: border-box;
+            
+            position: absolute;
+            top: 50%;
+           
+            transform: translateY(-50%);
+
+            .greetings {
+                color: whitesmoke;
+                font-size: 1.2em;
+                font-weight: 700;
+               
+            }
+            .name {
+               
+                font-size: 3.2em;
+                font-weight: 1000;
+                color: $color-blue;
+    
+            }
+            .designation {
+                color: whitesmoke;
+                font-size: 1.5em;
+                font-weight: 800;
+                margin-bottom: 20px;
+
+            }
+            .breif {
+                width: 100%;
+                height: auto;
+                color: $color-lblue;
+                font-size: 1em;
+                font-weight: 600;
+               
+            }
+        }
+        
+    }
+
+    .rightcon {
+        width: 40%;
+        height: 100%;
+       
+       position: relative;
+
+        img {
+            width: auto;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        
+            filter: drop-shadow(0.6rem 0.6rem 1rem #6bd0ffcc);
+        }
+    }
+    .dropdown {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .dropdown:hover {
+        animation: cpulse 1s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .homecon{
+        width: 100%;
+        height: max-content;
+        left: 0px;
+        
+    }
+    
+}

@@ -1,0 +1,78 @@
+$color-blue:#1A74E2;
+$color-lblue:#3FA0EF;
+$color-llblue:#6bd0ff;
+$color-black:#101010;
+$color-lblack:#1f2123;
+
+.aboutcon {
+    width: calc(100% - 95px);
+    height: 100vh;
+    
+    
+    
+    position: absolute;
+    left: 95px;
+   
+    display: flex;
+    flex-direction: column; 
+    
+    
+    .abouthead {
+        text-align: center;
+        position: relative;
+        top: 20px;
+        font-weight: 900;
+        font-size: 0.9em;
+        
+        background-color: $color-llblue;
+        width: max-content;
+        margin:  0 auto;
+        padding: 0px 4px;
+        color: $color-lblack;
+        border-radius: 3px;
+        animation: cpulse 1s alternate-reverse infinite;
+        
+    }
+
+    .aboutwrapper {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        padding: 0px 100px;
+        box-sizing: border-box;
+
+        .firstsec {
+       
+            font-size: 1em;
+            font-weight: 800;
+            color: whitesmoke;
+            
+           
+            margin-bottom: 30px;
+        }
+        .techstack {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 50px;
+            align-items: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+               
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:600px) {
+    .aboutcon{
+        width: 100%;
+        height: max-content;
+        left: 0px;
+        
+    }
+    
+}
