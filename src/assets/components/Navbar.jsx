@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import './Navbar.scss'
 import {AiFillHome} from 'react-icons/ai'
 import {FcAbout} from 'react-icons/fc'
-import {FcSelfServiceKiosk} from 'react-icons/fc'
+import {DiCode} from 'react-icons/di'
 import {GrProjects} from 'react-icons/gr'
 import {MdContactMail} from 'react-icons/md'
 import {TiChevronLeft} from 'react-icons/ti'
@@ -26,8 +26,8 @@ function Navbar({ isOpen, toggleSidebar }) {
       },
       {
         id:'3',
-        name:"Services",
-        route:'/services'
+        name:"Skills",
+        route:'/skills'
         },
         {
           id:'4',
@@ -61,7 +61,7 @@ function Navbar({ isOpen, toggleSidebar }) {
               <div className="icon">
                 {i.id=='1'?(<AiFillHome/>):
                   (i.id=='2'?(<FcAbout/>):
-                  (i.id=='3'?(<FcSelfServiceKiosk/>):
+                  (i.id=='3'?(<DiCode/>):
                   (i.id=='4'?(<GrProjects/>):
                   (<MdContactMail/>))))
                 }
@@ -77,6 +77,7 @@ function Navbar({ isOpen, toggleSidebar }) {
 
       </div>
     </div>
+    <div className='resume'><a href='' target='_blank'>Resume</a></div>
    </div>
 
   )

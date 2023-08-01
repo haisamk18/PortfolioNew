@@ -6,9 +6,10 @@ import Navbar from './assets/components/Navbar'
 import { Routes,Route } from 'react-router-dom'
 import Home from './assets/components/Home'
 import About from './assets/components/About'
-import Services from './assets/components/Services'
+import Services from './assets/components/Skills'
 import Projects from './assets/components/Projects'
 import Contact from './assets/components/Contact'
+import Skills from './assets/components/Skills'
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -44,7 +45,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/about' element={<About/>}/>
-        <Route exact path='/services' element={<Services/>}/>
+        <Route exact path='/skills' element={<Skills/>}/>
         <Route exact path='/projects' element={<Projects/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
         

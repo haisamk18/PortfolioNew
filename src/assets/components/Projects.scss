@@ -38,6 +38,20 @@ $color-lblack:#1f2123;
         align-items: center;
         gap: 40px;
     }
+    .dropdown {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .dropdown:hover {
+        animation: cpulse 1s ease-in-out;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -121,7 +135,33 @@ $color-lblack:#1f2123;
         height: 100%;
         background-color: $color-blue;
         z-index: 10;
+        padding: 5px;
+        box-sizing: border-box;
         
+        .descriptionofproject {
+            width: 100%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            color: aliceblue;
+            font-size: 0.7em;
+            font-weight: 500;
+            text-align: justify;
+        }
+        .projectetech{
+            display: flex;
+            flex-direction: column;
+
+            .techhead {
+                width: 100%;
+                color: aliceblue;
+                font-size: 0.7em;
+
+            }
+            .Imgcon {
+                display: flex;
+            }
+        } 
 
        
     }
