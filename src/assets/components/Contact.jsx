@@ -37,9 +37,9 @@ function Contact() {
           </div>
           <div className="followus">
             <span>Connect with me on:-</span>
-            <a><BsLinkedin className='flwicn'/></a>
-            <a><BsGithub  className='flwicn'/></a>
-            <a><FaInstagramSquare  className='flwicn'/></a>
+            <a target='_blank' href='https://www.linkedin.com/in/haisam-khurshid/'><BsLinkedin className='flwicn'/></a>
+            <a target='_blank' href='https://github.com/haisamk18'><BsGithub  className='flwicn'/></a>
+            <a target='_blank' href='https://www.instagram.com/haixsam/'><FaInstagramSquare  className='flwicn'/></a>
             
           </div>
         </div>
