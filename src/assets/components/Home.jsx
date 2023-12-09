@@ -20,7 +20,9 @@ function Home() {
       <div className="rightcon">
         <img src={Img}></img>
       </div>
+      <div>
       <AiOutlineDownCircle onClick={()=> navigate('/about')} className='dropdown'/>
+      </div>
     </div>
   )
 }

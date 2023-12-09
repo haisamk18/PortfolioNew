@@ -13,8 +13,8 @@ function ProjectCard({img,livelink,githubrepo,desc,tech}) {
         <img src={img}></img>
         <div className="overlay">
             <div className='linkcon'>
-            <a href={githubrepo}><AiFillGithub/></a>
-            <a href={livelink}><CgMediaLive/><span>Live</span></a>
+            <a href={githubrepo} target='_blank'><AiFillGithub/></a>
+            <a href={livelink} target='_blank'><CgMediaLive/><span>Live</span></a>
             </div>
             
         </div>

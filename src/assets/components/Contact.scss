@@ -222,6 +222,32 @@ $color-lblack:#1f2123;
         height: max-content;
         left: 0px;
         
+
+        .maincon {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 40px;
+            padding-bottom: 50px;
+            
+
+            .conleft {
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .conright {
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+
+
+                .form-inner {
+                    padding: 10px;
+                }
+            }
+        }
+        
     }
     
 }

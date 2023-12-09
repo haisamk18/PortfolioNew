@@ -94,7 +94,45 @@ $color-lblack:#1f2123;
     .aboutcon{
         width: 100%;
         height: max-content;
+        position: absolute;
         left: 0px;
+        padding: 0px;
+
+       
+       
+        
+        //padding: 30px;
+        box-sizing: border-box;
+
+        .aboutwrapper {
+            width: 100%;
+            height: max-content;
+            padding: 20px;
+            flex-direction: column;
+            box-sizing: border-box;
+            position: relative;
+            top: 20px;
+
+            div {
+                width: 100%;
+            }
+
+            .firstsec {
+                width: 100%;
+                padding: 0px;
+                height: max-content;
+                box-sizing: border-box;
+            }
+            .techstack {
+                width: 100%;
+                padding: 0px;
+                box-sizing: border-box;
+                gap: 10px;
+            }
+            .dropdown {
+                display: none;
+            }
+        }
         
     }
     

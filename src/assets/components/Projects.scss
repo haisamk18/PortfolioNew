@@ -59,7 +59,28 @@ $color-lblack:#1f2123;
         width: 100%;
         height: max-content;
         left: 0px;
+        padding: 0px;
+
+        .cardcon {
+            padding: 20px;
+            position: relative;
+            top: 20px;
+        }
+
+
     }
+
+    .card {
+        .overlay {
+            .linkcon {
+                padding: 20px;
+            }
+        }
+        .rightbox {
+            display: none;
+        }
+    }
+
     
 }
 

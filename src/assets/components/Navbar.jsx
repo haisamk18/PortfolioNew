@@ -76,8 +76,10 @@ function Navbar({ isOpen, toggleSidebar }) {
         })}
 
       </div>
+      
     </div>
     <div className='resume'><a href='https://drive.google.com/file/d/1Bqqj4Zl6oc-Rs0kaZLoVZMk7b22nrbnO/view?usp=sharing' target='_blank'>Resume</a></div>
+    
    </div>
 
   )

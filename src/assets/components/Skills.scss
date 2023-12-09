@@ -4,7 +4,7 @@ $color-llblue:#6bd0ff;
 $color-black:#101010;
 $color-lblack:#1f2123;
 
-.skillscon {
+.skillsconmain {
     width: calc(100% - 95px);
     height: 100vh;
     
@@ -99,10 +99,28 @@ $color-lblack:#1f2123;
     
 }
 @media only screen and (max-width:600px) {
-    .skillscon{
+    .skillsconmain {
         width: 100%;
-        height: max-content;
+        position: absolute;
         left: 0px;
+
+        .skillswrapper {
+            position: relative;
+            top: 40px;
+            padding: 0px 0px 20px 0px;
+            box-sizing: border-box;
+
+            .skillscon {
+                padding: 0px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+            }
+        }
+        
     }
     
 }

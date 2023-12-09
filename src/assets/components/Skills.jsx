@@ -84,7 +84,7 @@ function Skills() {
     },
   ]
   return (
-    <div className='skillscon'>
+    <div className='skillsconmain'>
       <div className="skilsshead">Skills</div>
       <div className='skillswrapper'>
       <div className="skillconhead">Technologies & Tools I work with:</div>

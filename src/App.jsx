@@ -10,6 +10,7 @@ import Services from './assets/components/Skills'
 import Projects from './assets/components/Projects'
 import Contact from './assets/components/Contact'
 import Skills from './assets/components/Skills'
+import {HiMenuAlt3} from 'react-icons/hi'
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -40,7 +41,7 @@ function App() {
     <div className='app'>
 
       
-      
+      {!isSidebarOpen && <HiMenuAlt3 onClick={toggleSidebar} className='menu'/>}
       <Navbar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
