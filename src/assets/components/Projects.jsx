@@ -3,12 +3,14 @@ import ProjectCard from './ProjectCard'
 import './Projects.scss'
 import saewebsite from '../saewebsite.png';
 import weatherweb from '../wthrapp.png'
-import Portfolioapp from '../portfolio.png'
+import Portfolioapp from '../portfolio.png';
+import vwimg from '../VW.png'
 import Cplus from '../c++.png'; //
 import ExpressImg from '../express.png'//
 import FigmaImg from '../figma.svg'//
 import FirebaseImg from '../firebase.png'//
 import flutterImg from '../flutter.png'//
+
 import Git from '../git.png'//
 import html from '../html.png'//
 import js from '../js.png' //
@@ -31,6 +33,12 @@ function Projects() {
     <div className='projects'>
         <div className="head">PROJECTS</div>
         <div className="cardcon">
+            <ProjectCard
+                img={vwimg}
+                desc='An Android Application that offers a dynamic platform for users to access real-time data, visualize vehicle performance metrics, set customized alerts, and analyze historical trends. '
+                livelink='https://drive.google.com/file/d/1Ybobuy91DYkadXSQLFwpULP6kVdbK5iI/view?usp=sharing'
+                githubrepo='https://github.com/haisamk18/VW_APP'
+            />
             <ProjectCard 
                img={saewebsite}
                tech={Saeweb}
