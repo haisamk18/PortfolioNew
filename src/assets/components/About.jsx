@@ -25,7 +25,12 @@ function About() {
        
        </div>
       <div className="techstack">
-        <span>Tech Stack i prefer:-</span><img src={MongoDbImg}></img><img src={Expressimg}></img><img src={ReactImg}></img><img src={NodeImg}><img src={PythonImg}></img>  
+        <span>Tech Stack i prefer:-</span>
+             <img src={MongoDbImg}></img>
+             <img src={Expressimg}></img>
+             <img src={ReactImg}></img>
+              <img src={NodeImg}></img>
+              <img src={PythonImg}></img>  
       </div>
       </div> 
       <AiOutlineDownCircle onClick={()=> navigate('/skills')} className='dropdown'/>
