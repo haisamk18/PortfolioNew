@@ -13,8 +13,8 @@ function Home() {
         <div className='textall'>
         <div className="greetings">Hello, I'm</div>
         <div className="name">Haisam Khurshid</div>
-        <div className="designation">Full Stack Developer</div>
-        <div className="breif">a dedicated full-stack developer on a mission to transform creative ideas into functional realities. With a keen eye for detail and a passion for elegant code, I specialize in delivering top-notch web applications that leave a lasting impression.</div>
+        <div className="designation">Developer. Engineer. Problem Solver.</div>
+        <div className="breif">I create powerful web applications and engineer practical EV solutions, blending hardware intuition with software expertise.a passion for elegant code, I specialize in delivering top-notch web applications that leave a lasting impression.</div>
         </div>
       </div>
       <div className="rightcon">
