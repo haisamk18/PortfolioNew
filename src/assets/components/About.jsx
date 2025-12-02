@@ -6,34 +6,46 @@ import Expressimg from '../express.png'
 import ReactImg from '../react.png'
 import NodeImg from '../node.png'
 import PythonImg from '../python.png'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { AiOutlineDownCircle } from 'react-icons/ai'
 
 function About() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
+
   return (
     <div className='aboutcon'>
       <div className="abouthead">ABOUT</div>
+
       <div className="aboutwrapper">
+
         <div className="firstsec">
-            <div>
-              I’m Haisam, a Full-Stack Developer & Mechanical Engineer passionate about building technology that connects software with EV systems. I develop modern web apps using the MERN stack and also work on motor testing, data acquisition, and EV performance tools.
-            </div>
-            <div>
-              Curiosity and problem-solving define my work—I love creating solutions that are clean, meaningful, and accessible to everyone.
-            </div>
-         
-       </div>
-      <div className="techstack">
-        <span>Tech Stack i prefer:-</span>
-             <img src={MongoDbImg}></img>
-             <img src={Expressimg}></img>
-             <img src={ReactImg}></img>
-              <img src={NodeImg}></img>
-              <img src={PythonImg}></img>  
-      </div>
-      
-      <AiOutlineDownCircle onClick={()=> navigate('/skills')} className='dropdown'/>
+          <div>
+            I’m Haisam, a Full-Stack Developer & Mechanical Engineer passionate about building technology 
+            that connects software with EV systems. I develop modern web apps using the MERN stack and also 
+            work on motor testing, data acquisition, and EV performance tools.
+          </div>
+
+          <div>
+            Curiosity and problem-solving define my work—I love creating solutions that are clean, 
+            meaningful, and accessible to everyone.
+          </div>
+        </div>
+
+        <div className="techstack">
+          <span>Tech Stack I prefer:-</span>
+          <img src={MongoDbImg} />
+          <img src={Expressimg} />
+          <img src={ReactImg} />
+          <img src={NodeImg} />
+          <img src={PythonImg} />
+        </div>
+
+      </div> {/* closing aboutwrapper */}
+
+      <AiOutlineDownCircle 
+        onClick={() => navigate('/skills')} 
+        className='dropdown' 
+      />
     </div>
   )
 }
