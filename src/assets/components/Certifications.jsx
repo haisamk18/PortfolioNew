@@ -24,7 +24,7 @@ import TailwindCSS from '../tailwind.png'//
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineDownCircle } from 'react-icons/ai';
 
-function Projects() {
+function Certificates() {
   const navigate=useNavigate();
 
   const Saeweb=["ReactJS","ExpressJs","MongoDB","Postman","Figma","TailwindCSS"]
@@ -34,10 +34,10 @@ function Projects() {
         <div className="head">PROJECTS</div>
         <div className="cardcon">
             <ProjectCard
-                img={vwimg}
+                img="https://drive.google.com/file/d/1OrCNC_LfhbM--KJptWri4JXyO9S7Rg5H/view?usp=drive_link"
                 desc='An Android Application that offers a dynamic platform for users to access real-time data, visualize vehicle performance metrics, set customized alerts, and analyze historical trends. '
-                livelink='https://drive.google.com/file/d/1Ybobuy91DYkadXSQLFwpULP6kVdbK5iI/view?usp=sharing'
-                githubrepo='https://github.com/haisamk18/VW_APP'
+                livelink='https://drive.google.com/file/d/1OrCNC_LfhbM--KJptWri4JXyO9S7Rg5H/view?usp=drive_link'
+                
             />
             <ProjectCard 
                img={saewebsite}
@@ -47,7 +47,18 @@ function Projects() {
                githubrepo='https://github.com/haisamk18/saeweb'
             
             />
-           
+            <ProjectCard
+               img={weatherweb}
+               desc='This WeatherApp is a dynamic web application designed to deliver live, hourly, and weekly weather updates. With its intuitive and modern interface, users can easily access real-time weather data for their location and other desired areas.'
+               livelink='https://wthrapp.vercel.app/'
+               githubrepo='https://github.com/haisamk18/wthrapp'
+            />
+            <ProjectCard
+                img={Portfolioapp}
+                desc='PortfolioApp is a sleek and interactive web application designed to present my professional journey and achievements in a captivating manner. With five distinct sections—Home, About Me, Skills, Projects, and Contact Me—visitors can easily navigate and explore my expertise. '
+                livelink='https://haixsamk18.vercel.app/'
+                githubrepo='https://github.com/haisamk18/PortfolioNew'
+            />
             
         </div>
         <AiOutlineDownCircle onClick={()=> navigate('/contact')} className='dropdown'/>
@@ -55,4 +66,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Certificates

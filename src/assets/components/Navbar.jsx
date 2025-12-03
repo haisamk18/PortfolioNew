@@ -8,7 +8,9 @@ import {MdContactMail} from 'react-icons/md'
 import {TiChevronLeft} from 'react-icons/ti'
 import {TiChevronRight} from 'react-icons/ti'
 import {HiMenuAlt3} from 'react-icons/hi'
+import { GrCertificate } from "react-icons/gr"
 import {Link} from 'react-router-dom'
+
 
 
 function Navbar({ isOpen, toggleSidebar }) {
@@ -34,6 +36,8 @@ function Navbar({ isOpen, toggleSidebar }) {
           name:"Projects",
           route:'/projects'
           },
+         
+          
           {
             id:'5',
             name:"Contact",
@@ -61,9 +65,17 @@ function Navbar({ isOpen, toggleSidebar }) {
               <div className="icon">
                 {i.id=='1'?(<AiFillHome/>):
                   (i.id=='2'?(<FcAbout/>):
-                  (i.id=='3'?(<DiCode/>):
-                  (i.id=='4'?(<GrProjects/>):
-                  (<MdContactMail/>))))
+                       (i.id=='3'?(<DiCode/>):
+                           (i.id=='4'?(<GrProjects/>):
+                              
+                  
+                  (<MdContactMail/>)
+                              
+                           )
+                    
+                        )
+                  
+                  )
                 }
               
             </div>
@@ -78,7 +90,7 @@ function Navbar({ isOpen, toggleSidebar }) {
       </div>
       
     </div>
-    <div className='resume'><a href='https://drive.google.com/file/d/1HI2vwK57H0GxZWXih44jpxUlGz54bin_/view?usp=sharing' target='_blank'>Resume</a></div>
+    <div className='resume'><a href='https://drive.google.com/file/d/1RaMlswVrMSK6uGBXk4N1X7rsL-nLbDPw/view?usp=sharing' target='_blank'>Resume</a></div>
     
    </div>
 

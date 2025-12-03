@@ -21,6 +21,25 @@ import { AiOutlineDownCircle } from 'react-icons/ai';
 function Skills() {
   const navigate=useNavigate();
 
+  const SkillsSet = [
+    {
+      Name:"Programming"
+    },
+    {
+      Name:"EV & Cross-Functional"
+    },
+    {
+      Name:"Mechanical"
+    },
+    {
+      Name:"Management"
+    },
+    {
+      Name: "Software Tools"
+    }
+   
+  ]
+
   const SkillsData =[ 
     {
       Img:Cplus,
@@ -83,20 +102,71 @@ function Skills() {
       Name:"Figma"
     },
   ]
+  const Ev =["Electric Vehicle Architecture", "BMS Fundamentals" , "Motor & Motor Controller Basics" , "Power Electronics Basics" , "High/Low Voltage Systems","CAN Communication & Diagnostics" , "Hardware–Software Co-Simulation"]
+
+  const Mech = ["Product Design", "Automotive Simulation", "Mechanical Manufacturing" , " Mechanical Manufacturing" , "Thermal Systems Analysis" , "Structural Design for EV Components" , "Quality Management"]
+ 
+  const Managment = ["Project Management","Project Delivery", "Cross-Functional Collaboration","Team Management","Data Analysis","Engineering Documentation"]
+
+  const Software = ["SolidWorks", "AutoCAD", "Ansys", "MATLAB Simulink", "IPG Carmaker", "Git/Github", "Arduino"]
+
+
   return (
     <div className='skillsconmain'>
       <div className="skilsshead">Skills</div>
       <div className='skillswrapper'>
       <div className="skillconhead">Technologies & Tools I work with:</div>
+    
       <div className='skillscon'>
-        {SkillsData.map((e)=> {
-          return (<div key={e.Name} className='skill'>
-            <img src={e.Img}></img>
-            <div>{e.Name}</div>
-          </div>)
-        })}
+        <div className='left_part'>
+          {SkillsSet.map((e)=> {
+            return (<div key={e.Name} className="skilltitle">
+                <div>{e.Name}</div>
+            </div>)
+          })}
+
+        </div>
+        <div className='right_part'>
+          <div className='programming'>
+            {SkillsData.map((e)=> {
+              return(<div  className='imgcon'>
+                 <div className='img'><img src={e.Img}></img></div>
+                 <div className='language'>{e.Name}</div>
+              </div>)
+            })}
+          </div>
+          <div className="ev">
+            {
+              Ev.map((e)=> {
+                return(<div className='evskills'>{e}</div>)
+              })
+            }
+          </div>
+          <div className="mech">
+            {Mech.map((e)=> {
+              return (<div className='mechskills'>{e}</div>)
+            })}
+          </div>
+          <div className="managment">
+            {Managment.map((e)=> {
+              return(<div className='managementskills'>{e}</div>)
+            })}
+          </div>
+          <div className="tools">
+            {Software.map((e)=> {
+              return(<div className='toolsname'>{e}</div>)
+            })}
+          </div>
+
+
+        </div>
+       
 
       </div>
+     
+
+      
+    
       </div> 
       <AiOutlineDownCircle onClick={()=> navigate('/projects')} className='dropdown'/>
     </div>

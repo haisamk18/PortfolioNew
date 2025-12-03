@@ -10,6 +10,7 @@ import Services from './assets/components/Skills'
 import Projects from './assets/components/Projects'
 import Contact from './assets/components/Contact'
 import Skills from './assets/components/Skills'
+import Certificates from './assets/components/Certifications'
 import {HiMenuAlt3} from 'react-icons/hi'
 
 function App() {
@@ -48,7 +49,10 @@ function App() {
         <Route exact path='/about' element={<About/>}/>
         <Route exact path='/skills' element={<Skills/>}/>
         <Route exact path='/projects' element={<Projects/>}/>
+        <Route exact path='/certificates' element={<Certificates/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
+
+        
         
       </Routes>
 
